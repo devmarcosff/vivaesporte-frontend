@@ -1,7 +1,6 @@
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { GraduationCap, LibraryBig, LoaderCircle } from "lucide-react";
+import { GraduationCap, LoaderCircle } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";

@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertCircle, GraduationCap, Settings, FileText, Plus, Search, Terminal, LibraryBig } from "lucide-react";
+import { GraduationCap, Settings, Plus, Search, Terminal, LibraryBig } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { RouteMap } from "@/routes/route-map";

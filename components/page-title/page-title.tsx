@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { ChevronLeft, LibraryBig, Plus } from "lucide-react";
-import { RefAttributes } from "react";
+import { ChevronLeft, Plus } from "lucide-react";
 import React from "react";
 
 interface PageTitleProps {

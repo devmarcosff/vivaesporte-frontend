@@ -2,16 +2,14 @@
 
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
-import { Bell, Menu, LogOut, User, CreditCard, ChevronLeft, Rss, Circle, UserCircle } from "lucide-react";
+import { Menu, LogOut, User } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
 import { RouteMap } from "../../routes/route-map";
-import { useState } from "react";
-// import FeedbackButton from "../feature-base/feature-base";
 import nookies from 'nookies'
+import { useRouter } from "next/navigation";
 
 interface HeaderProps {
   onMobileMenuClick: () => void;
@@ -20,8 +18,6 @@ interface HeaderProps {
 export function Header({ onMobileMenuClick }: HeaderProps) {
   const router = useRouter();
   const t = useTranslations("navbar");
-  const pathname = usePathname();
-  const [backAction, setBackAction] = useState();
 
   const handleLogout = () => {
     // TODO: Implement actual logout

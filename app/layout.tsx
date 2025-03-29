@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -30,7 +30,9 @@ async function RootLayout({ children }: LayoutProps) {
   return (
     <html lang='pt-br'>
       <body className={poppins.className}>
-        <LoadingBar />
+        <Suspense fallback={null}>
+          <LoadingBar />
+        </Suspense>
         <Toaster duration={2000} />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
