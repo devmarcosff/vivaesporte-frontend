@@ -5,6 +5,9 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { Label } from "./ui/label"
+import { Switch } from "./ui/switch"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip"
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme()
@@ -19,24 +22,30 @@ export function ModeToggle() {
   }
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-    >
-      <Sun 
-        className={cn(
-          "h-[1.2rem] w-[1.2rem] transition-all",
-          theme === "light" ? "scale-0 -rotate-90" : "scale-100 rotate-0"
-        )} 
-      />
-      <Moon 
-        className={cn(
-          "absolute h-[1.2rem] w-[1.2rem] transition-all",
-          theme === "light" ? "scale-100 rotate-0" : "scale-0 rotate-90"
-        )} 
-      />
-      <span className="sr-only">Toggle theme</span>
-    </Button>
+    <div className="flex gap-3 items-center">
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Label htmlFor="airplane-mode">
+              <Sun size={16} className="cursor-pointer" />
+            </Label>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Tema claro</p>
+          </TooltipContent>
+        </Tooltip>
+        <Switch id="airplane-mode" onClick={() => setTheme(theme === "light" ? "dark" : "light")} />
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Label htmlFor="airplane-mode">
+              <Moon size={16} className="cursor-pointer" />
+            </Label>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Tema escuro</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    </div>
   )
 }

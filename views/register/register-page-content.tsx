@@ -4,13 +4,10 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { ArrowLeft } from 'lucide-react'
-
-import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import { PasswordInput } from '@/components/password-input'
 
 export function RegisterPageContent() {
-  const t = useTranslations('register')
 
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-muted p-6 md:p-10">
@@ -18,27 +15,28 @@ export function RegisterPageContent() {
         <LogoLogin />
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-xl">{t('title')}</CardTitle>
-            <CardDescription>{t('description')}</CardDescription>
+            <CardTitle className="text-xl">Criar conta</CardTitle>
+            <CardDescription>Descrição da criação de conta</CardDescription>
           </CardHeader>
           <CardContent>
             <form>
               <div className="grid gap-6">
                 <div className="grid gap-6">
                   <div className="grid gap-2">
-                    <Label htmlFor="email">{t('emailLabel')}</Label>
-                    <Input id="email" type="email" placeholder="me@example.com" required size={40} />
+                    <Label htmlFor="email">E-mail</Label>
+                    <Input id="email" type="email" placeholder="seuemail@stevanini.com.br" required size={40} />
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="name">{t('nameLabel')}</Label>
-                    <Input id="name" type="text" placeholder="me" required size={40} />
+                    <Label htmlFor="name">Nome</Label>
+                    <Input id="name" type="text" placeholder="Nome completo" required size={40} />
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="company">{t('companyLabel')}</Label>
-                    <Input id="company" type="text" placeholder="me" required size={40} />
+                    <Label htmlFor="password">Senha</Label>
+                    <PasswordInput placeholder="Escolha uma senha" required size={40} />
+                    {/* <Input id="password" type="password" placeholder="Escolha uma senha" required size={40} /> */}
                   </div>
                   <Button type="submit" className="w-full">
-                    {t('register')}
+                    Criar conta
                   </Button>
                 </div>
                 <div className="text-center">
@@ -54,13 +52,13 @@ export function RegisterPageContent() {
           </CardContent>
         </Card>
         <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 ">
-          {t('byClickingContinueYouAgreeToOur')}{' '}
+          algo
           <a href="#" className="[&]:hover:text-primary">
-            {t('termsOfService')}
+            algo
           </a>{' '}
-          {t('and')}{' '}
+          algo
           <a href="#" className="[&]:hover:text-primary">
-            {t('privacyPolicy')}
+            algo
           </a>
           .
         </div>

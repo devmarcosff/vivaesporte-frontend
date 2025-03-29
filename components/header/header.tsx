@@ -11,7 +11,7 @@ import { RouteMap } from "../../routes/route-map";
 import nookies from 'nookies'
 import { useRouter } from "next/navigation";
 
-interface HeaderProps {
+export interface HeaderProps {
   onMobileMenuClick: () => void;
 }
 

@@ -16,6 +16,7 @@ import Link from 'next/link'
 import { PasswordInput } from '@/components/password-input'
 import { toast } from 'sonner'
 import { setCookie } from 'nookies'
+import { ModeToggle } from '@/components/mode-toggle'
 
 interface LoginFormData {
   email: string,
@@ -52,15 +53,18 @@ export function LoginPageContent() {
   }
 
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-muted p-6 md:p-10">
+    <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-background p-6 md:p-10">
       <div className="flex w-full max-w-md flex-col">
         <LogoLogin />
         <Card>
-          <CardHeader className="text-center">
+          <CardHeader className="text-center relative">
             <CardTitle className="text-xl">Seja bem-vindo</CardTitle>
             <CardDescription>Faça seu login</CardDescription>
+            <div className='hidden md:flex absolute' >
+              <ModeToggle />
+            </div>
           </CardHeader>
-          <CardContent>
+          <CardContent className='relative'>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="grid gap-6">
                 <div className="grid gap-6">
@@ -106,9 +110,12 @@ export function LoginPageContent() {
                 </div>
               </div>
             </form>
+            <div className='flex md:hidden absolute -bottom-10 right-0' >
+              <ModeToggle />
+            </div>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </div >
   )
 }
