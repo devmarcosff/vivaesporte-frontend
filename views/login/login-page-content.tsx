@@ -12,10 +12,8 @@ import { loginService } from './login-service'
 import { RouteMap } from '@/routes/route-map'
 import { useRouter } from 'next/navigation'
 import { LogoLogin } from '@/components/logo-login/logo-login'
-import Link from 'next/link'
 import { PasswordInput } from '@/components/password-input'
 import { toast } from 'sonner'
-import { setCookie } from 'nookies'
 import { ModeToggle } from '@/components/mode-toggle'
 
 interface LoginFormData {
