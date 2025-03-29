@@ -1,0 +1,20 @@
+{
+  "tutorials": {
+    "title": "Tutoriais",
+    "description": "Gerencie seus agentes para automatizar tarefas de forma inteligente",
+    "sections": {
+      "settingUpYourAccount": "Configuração da Conta",
+      "learnHowToSetUpYourAccount": "Aprenda como configurar sua conta",
+      "createYourKnowledgeBase": "Criando sua Base de Conhecimento",
+      "howToUseKnowledgeThroughSources": "Como usar Conhecimento atrás de Fontes",
+      "videos": {
+        "accountConfiguration": "Configuração da Conta",
+        "teamManagement": "Gerenciamento do Time",
+        "userPermissions": "Permissões de Usuário",
+        "knowledgeBaseSetup": "Configuração da Base de Conhecimento",
+        "addingSources": "Adicionando Fontes",
+        "managingContent": "Gerenciando Conteúdo"
+      }
+    }
+  }
+}

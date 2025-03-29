@@ -1,0 +1,24 @@
+{
+  "knowledge": {
+    "title": "Conhecimento",
+    "description": "Aqui você pode adicionar e editar seus conhecimentos.",
+    "newKnowledge": "Novo Conhecimento",
+    "searchPlaceholder": "Pesquise pelo nome...",
+    "noLlmConfigured": "Nenhuma LLM configurada",
+    "accessTutorial": "Acessar tutorial",
+    "configure": "Configurar",
+    "noLlmConfiguredDescription": "Você ainda não concluiu a configuração da sua conta. A criação de Agentes e Conhecimentos só é liberada após inserir alguma chave api.",
+    "noKnowledgeCreated": "Nenhum conhecimento criado ainda"
+  },
+  "knowledgeRegister": {
+    "title": "Criar Conhecimento",
+    "description": "Aqui você pode criar um novo conhecimento.",
+    "tutorialAlert": "Criando seu primeiro Conhecimento? Assista nosso",
+    "tutorialLink": "tutorial",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Digite o nome do conhecimento",
+    "descriptionLabel": "Descrição",
+    "descriptionPlaceholder": "Digite a descrição do conhecimento",
+    "submit": "Criar Conhecimento"
+  }
+}

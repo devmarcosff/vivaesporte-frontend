@@ -1,0 +1,15 @@
+{
+  "loginForm": {
+    "welcomeBack": "Seja bem-vindo",
+    "orContinueWith": "ou continue com",
+    "email": "E-mail",
+    "password": "Senha",
+    "login": "Entrar",
+    "dontHaveAnAccount": "Não tem uma conta?",
+    "forgotYourPassword": "Esqueceu sua senha?",
+    "signUp": "Cadastro",
+    "continue": "Continuar",
+    "continueWithGoogle": "Entrar com o Google",
+    "loginWithYourAppleOrGoogleAccount": "Entrar com sua conta Google"
+  }
+}

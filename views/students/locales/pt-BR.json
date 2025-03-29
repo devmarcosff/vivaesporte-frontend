@@ -1,0 +1,33 @@
+{
+  "agents": {
+    "title": "Agentes",
+    "description": "Gerencie seus agentes para automatizar suas tarefas",
+    "searchPlaceholder": "Pesquise por nome, modelo...",
+    "newAgentButtonLabel": "Novo agente",
+    "configureButtonLabel": "Configurar",
+    "emptyTableText": "Você ainda não criou um agente"
+  },
+  "agentRegister": {
+    "title": "Criar superagentes",
+    "description": "Aqui você pode criar um novo superagentes.",
+    "tutorialAlert": "Primeira vez criando um agente? Assista nosso",
+    "tutorialLink": "tutorial",
+    "nameInputLabel": "Nome",
+    "nameInputPlaceholder": "Escreva o nome do agente aqui",
+    "handleInputPlaceholder": "Superagente",
+    "descriptionInputPlaceholder": "Escreva a descrição do agente aqui",
+    "submitButtonLabel": "Criar agente"
+  },
+  "agentFirstRegister": {
+    "title": "Novo agente",
+    "description": "Criando seu primeiro Agente? Assista nosso",
+    "tutorialButtonLabel": "tutorial",
+    "nameLabel": "Nome",
+    "nameInputLabel": "Escreva aqui o nome do agente",
+    "surnameLabel": "Apelido",
+    "surnameInputLabel": "superagente",
+    "descriptionLabel": "Descrição",
+    "descriptionInputLabel": "Escreva aqui a descrição do agente",
+    "buttonLabel": "Criar o Agente"
+  }
+}

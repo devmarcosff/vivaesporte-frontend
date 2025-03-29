@@ -1,0 +1,12 @@
+{
+  "profile": {
+    "title": "Configurações do Perfil",
+    "description": "Seus dados pessoais e configurações",
+    "nameLabel": "Nome",
+    "emailLabel": "Email",
+    "languageLabel": "Selecione o idioma",
+    "avatarEditButton": "Editar",
+    "saveButton": "Salvar",
+    "agentName": "Nome do Agente"
+  }
+}

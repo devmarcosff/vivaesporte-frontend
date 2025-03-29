@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "dashboard": "Painel",
+    "agents": "Agentes",
+    "knowledge": "Conhecimento",
+    "chats": "Conversas",
+    "reports": "Relatórios",
+    "settings": "Configurações",
+    "tutorials": "Tutoriais"
+  }
+}

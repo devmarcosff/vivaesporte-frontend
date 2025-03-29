@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "agents": "Agents",
+    "knowledge": "Knowledge",
+    "chats": "Chats",
+    "reports": "Reports",
+    "settings": "Settings",
+    "tutorials": "Tutorials"
+  }
+}
