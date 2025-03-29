@@ -42,5 +42,3 @@ next-env.d.ts
 messages/*.json
 package-lock.json
 yarn.lock
-
-locales/*.json

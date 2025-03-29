@@ -1,0 +1,161 @@
+{
+  "navbar": {
+    "settings": "Meu perfil",
+    "billing": "Meu plano",
+    "logout": "Sair"
+  },
+  "loginForm": {
+    "welcomeBack": "Seja bem-vindo",
+    "orContinueWith": "ou continue com",
+    "email": "E-mail",
+    "password": "Senha",
+    "login": "Entrar",
+    "dontHaveAnAccount": "Não tem uma conta?",
+    "forgotYourPassword": "Esqueceu sua senha?",
+    "signUp": "Cadastro",
+    "byClickingContinueYouAgreeToOur": "Ao clicar em continuar, você concorda com nossos",
+    "termsOfService": "Termos de Serviço",
+    "and": "e",
+    "privacyPolicy": "Política de Privacidade",
+    "continue": "Continuar",
+    "continueWithGoogle": "Entrar com o Google",
+    "loginWithYourAppleOrGoogleAccount": "Entrar com sua conta Apple ou Google"
+  },
+  "sidebar": {
+    "dashboard": "Painel",
+    "agents": "Agentes",
+    "knowledge": "Conhecimento",
+    "chats": "Conversas",
+    "reports": "Relatórios",
+    "settings": "Configurações",
+    "tutorials": "Tutoriais"
+  },
+  "agents": {
+    "title": "Agentes",
+    "description": "Gerencie seus agentes para automatizar suas tarefas",
+    "searchPlaceholder": "Pesquise por nome, modelo...",
+    "newAgentButtonLabel": "Novo agente",
+    "configureButtonLabel": "Configurar",
+    "emptyTableText": "Você ainda não criou um agente"
+  },
+  "agentRegister": {
+    "title": "Criar superagentes",
+    "description": "Aqui você pode criar um novo superagentes.",
+    "tutorialAlert": "Primeira vez criando um agente? Assista nosso",
+    "tutorialLink": "tutorial",
+    "nameInputLabel": "Nome",
+    "nameInputPlaceholder": "Escreva o nome do agente aqui",
+    "handleInputPlaceholder": "Superagente",
+    "descriptionInputPlaceholder": "Escreva a descrição do agente aqui",
+    "submitButtonLabel": "Criar agente"
+  },
+  "agentFirstRegister": {
+    "title": "Novo agente",
+    "description": "Criando seu primeiro Conhecimento? Assista nosso",
+    "tutorialButtonLabel": "tutorial",
+    "nameLabel": "Nome",
+    "nameInputLabel": "Escreva aqui o nome do agente",
+    "handleLabel": "Apelido",
+    "handleInputLabel": "superagente",
+    "descriptionLabel": "Descrição",
+    "descriptionInputLabel": "Escreva aqui a descrição do agente"
+  },
+  "agentCustomize": {
+    "chatButtonLabel": "Chat",
+    "technologyTab": "Tecnologia",
+    "instructionsTab": "Instruções",
+    "knowledgeTab": "Conhecimento",
+    "environmentsTab": "Ambientes",
+    "saveButtonLabel": "Salvar",
+    "technologyCardTitle": "Configurações de modelo",
+    "technologyCardSubtitle": "Configure o modelo de IA que seu Agente irá usar",
+    "selectModelInputPlaceholder": "Selecione o modelo",
+    "modelConfigurationButtonLabel": "Configuração de modelo",
+    "selectTempeartureInputPlaceholder": "Selecione a temperatura",
+    "timezoneSectionTitle": "Fuso horário",
+    "instructionsCardTitle": "Configurações de prompt",
+    "instructionsCardSubtitle": "Personalize o promp do seu Agente",
+    "simplifiedTab": "Simplificado",
+    "advancedTab": "Avançado",
+    "templateTab": "Templates",
+    "simplifiedTabTitle": "Informações essenciais",
+    "generalRules": "Regras gerais",
+    "advancedTabTitle": "Prompt avançado",
+    "templateTabTitle": "Selecione um template",
+    "knowledgeCardTitle": "Configurações do conhecimento",
+    "knowledgeCardSubtitle": "Gerencie o conhecimento do seu Agente",
+    "knowledgeSelected": "Conhecimentos selecionados",
+    "noKnowledgeSelected": "Nenhum conhecimento selecionado",
+    "knowledgeAvailable": "Conhecimentos disponíveis",
+    "noKnowledgeAvailabel": "Nenhum conhecimento disponível",
+    "environmentCardTitle": "Configurações de ambiente",
+    "environmentsCardSubtitle": "Gerencie os Ambientes do seu Agente",
+    "environmentWhatsAppButtonLabel": "Conectar com WhatsApp",
+    "environmentShareLinkButtonLabel": "Compartilhar link",
+    "environmentEmbedLinkButtonLabel": "Incorporar em seu site"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Seu painel de controle"
+  },
+  "knowledge": {
+    "title": "Conhecimento",
+    "description": "Aqui você pode adicionar e editar seus conhecimentos.",
+    "newKnowledge": "Novo Conhecimento",
+    "searchPlaceholder": "Pesquise pelo nome...",
+    "noLlmConfigured": "Nenhuma LLM configurada",
+    "accessTutorial": "Acessar tutorial",
+    "configure": "Configurar",
+    "noLlmConfiguredDescription": "Você ainda não concluiu a configuração da sua conta. A criação de Agentes e Conhecimentos só é liberada após inserir alguma chave api.",
+    "noKnowledgeCreated": "Nenhum conhecimento criado ainda"
+  },
+  "knowledgeRegister": {
+    "title": "Criar Conhecimento",
+    "description": "Aqui você pode criar um novo conhecimento.",
+    "tutorialAlert": "Criando seu primeiro Conhecimento? Assista nosso",
+    "tutorialLink": "tutorial",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Digite o nome do conhecimento",
+    "descriptionLabel": "Descrição",
+    "descriptionPlaceholder": "Digite a descrição do conhecimento",
+    "submit": "Criar Conhecimento"
+  },
+  "billing": {
+    "billingSettings": "Configurações de Faturamento",
+    "manageBillingInformation": "Gerencie as informações de faturamento",
+    "billingSettingsComingSoon": "Configurações de Faturamento em breve..."
+  },
+  "settings": {
+    "manageYourAccountInformationAndSettings": "Gerencie suas configurações de conta e ajustes",
+    "profile": "Perfil",
+    "billing": "Faturamento"
+  },
+  "profile": {
+    "profileSettings": "Configurações do Perfil",
+    "yourPersonalInformationAndSettings": "Seus dados pessoais e configurações",
+    "nameLabel": "Nome",
+    "emailLabel": "Email",
+    "languageLabel": "Selecione o idioma",
+    "edit": "Editar",
+    "save": "Salvar",
+    "agentName": "Nome do Agente"
+  },
+  "tutorials": {
+    "title": "Tutoriais",
+    "description": "Gerencie seus agentes para automatizar tarefas de forma inteligente",
+    "sections": {
+      "settingUpYourAccount": "Configuração da Conta",
+      "learnHowToSetUpYourAccount": "Aprenda como configurar sua conta",
+      "createYourKnowledgeBase": "Criando sua Base de Conhecimento",
+      "howToUseKnowledgeThroughSources": "Como usar Conhecimento atrás de Fontes",
+      "videos": {
+        "accountConfiguration": "Configuração da Conta",
+        "teamManagement": "Gerenciamento do Time",
+        "userPermissions": "Permissões de Usuário",
+        "knowledgeBaseSetup": "Configuração da Base de Conhecimento",
+        "addingSources": "Adicionando Fontes",
+        "managingContent": "Gerenciando Conteúdo"
+      }
+    }
+  }
+}
