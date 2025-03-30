@@ -25,8 +25,6 @@ export function TeachersNewContent() {
   const {
     register,
     handleSubmit,
-    setValue,
-    getValues,
     formState: { errors },
   } = useForm<TeachersInput>();
 
@@ -46,8 +44,8 @@ export function TeachersNewContent() {
 
   return (
     <div className="flex flex-col space-y-8 items-center">
-      <div className="space-y-8 w-2/3">
-        <PageTitle title={t("title")} backButtonUrl={RouteMap.teachers} />
+      <div className="space-y-8 w-full lg:w-2/3">
+        <PageTitle title="Novo Professor" description="Preencha os formulários e cadastre um novo professor." backButtonUrl={RouteMap.teachers} />
         {/* Tutorial Link */}
         <Alert variant="default" className="flex items-center">
           <div className="flex items-center gap-3">

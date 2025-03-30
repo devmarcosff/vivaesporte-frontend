@@ -39,8 +39,8 @@ export function StudentsNewContent() {
 
   return (
     <div className="flex flex-col space-y-8 items-center">
-      <div className="space-y-8 w-2/3">
-        <PageTitle title={t("title")} backButtonUrl={RouteMap.students} />
+      <div className="space-y-8 w-full lg:w-2/3">
+        <PageTitle title='Novo Aluno' description="Preencha os formulários e cadastre um novo aluno." backButtonUrl={RouteMap.students} />
         {/* Tutorial Link */}
         <Alert variant="default" className="flex items-center">
           <div className="flex items-center gap-3">
@@ -65,22 +65,37 @@ export function StudentsNewContent() {
               <Input
                 id="name"
                 {...register("name", { required: "Campo obrigatório" })}
-                placeholder="Nome completo"
+                placeholder="Nome completo do aluno"
                 className="h-12"
               />
             </div>
 
-            {/* Data de nascimento */}
-            <div className="space-y-2">
-              <label htmlFor="birthDate" className="text-sm text-muted-foreground font-medium">
-                Data de nascimento
-              </label>
-              <Input
-                id="birthDate"
-                type="date"
-                {...register("birthDate", { required: "Campo obrigatório" })}
-                className="h-12"
-              />
+            <div className="w-full flex gap-3 items-center">
+              {/* Data de nascimento */}
+              <div className="w-1/2 space-y-2">
+                <label htmlFor="birthDate" className="text-sm text-muted-foreground font-medium">
+                  Data de nascimento
+                </label>
+                <Input
+                  id="birthDate"
+                  type="date"
+                  {...register("birthDate", { required: "Campo obrigatório" })}
+                  className="h-12 text-nowrap"
+                />
+              </div>
+
+              {/* Tipo sanguíneo */}
+              <div className="w-1/2 space-y-2">
+                <label htmlFor="bloodType" className="text-sm text-muted-foreground font-medium">
+                  Tipo Sanguíneo
+                </label>
+                <Input
+                  id="bloodType"
+                  {...register("bloodType", { required: "Campo obrigatório" })}
+                  placeholder="Ex: A+"
+                  className="h-12"
+                />
+              </div>
             </div>
 
             {/* Documento */}
@@ -91,7 +106,7 @@ export function StudentsNewContent() {
               <Input
                 id="document"
                 {...register("document", { required: "Campo obrigatório" })}
-                placeholder="CPF ou outro"
+                placeholder="CPF do aluno"
                 className="h-12"
               />
             </div>
@@ -105,6 +120,7 @@ export function StudentsNewContent() {
                 id="registrationNumber"
                 {...register("registrationNumber", { required: "Campo obrigatório" })}
                 className="h-12"
+                placeholder="Matrícula do aluno"
               />
             </div>
 
@@ -117,6 +133,7 @@ export function StudentsNewContent() {
                 id="filiation"
                 {...register("filiation", { required: "Campo obrigatório" })}
                 className="h-12"
+                placeholder="Filiação do aluno"
               />
             </div>
 
@@ -150,19 +167,6 @@ export function StudentsNewContent() {
               </select>
             </div>
 
-            {/* Tipo sanguíneo */}
-            <div className="space-y-2">
-              <label htmlFor="bloodType" className="text-sm text-muted-foreground font-medium">
-                Tipo Sanguíneo
-              </label>
-              <Input
-                id="bloodType"
-                {...register("bloodType", { required: "Campo obrigatório" })}
-                placeholder="Ex: A+"
-                className="h-12"
-              />
-            </div>
-
             {/* Escola */}
             <div className="space-y-2">
               <label htmlFor="school" className="text-sm text-muted-foreground font-medium">
@@ -172,6 +176,7 @@ export function StudentsNewContent() {
                 id="school"
                 {...register("school", { required: "Campo obrigatório" })}
                 className="h-12"
+                placeholder="Escolaridade do aluno"
               />
             </div>
 
@@ -184,6 +189,7 @@ export function StudentsNewContent() {
                 id="address"
                 {...register("address", { required: "Campo obrigatório" })}
                 className="h-12"
+                placeholder="Endereço do aluno"
               />
             </div>
 

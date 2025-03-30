@@ -9,11 +9,12 @@ interface PageTitleProps {
   primaryButton?: { label: string; icon?: React.ReactNode; action: () => void };
   secondaryButton?: { label: string; icon?: React.ReactNode; action: () => void };
   backButtonUrl?: string;
+  flex?: boolean
 }
 
-export function PageTitle({ primaryButton, secondaryButton, title, description, backButtonUrl }: PageTitleProps) {
+export function PageTitle({ primaryButton, secondaryButton, title, description, backButtonUrl, flex }: PageTitleProps) {
   return (
-    <div className="md:flex items-center justify-center gap-4 mb-8">
+    <div className={`md:flex items-center justify-center gap-1 mb-8`}>
       {backButtonUrl && (
         <Button variant="outline" size="icon" className="mr-2" asChild>
           <Link href={backButtonUrl}>

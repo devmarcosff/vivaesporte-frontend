@@ -25,22 +25,22 @@ export function ModeToggle() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Label htmlFor="airplane-mode">
-              <Sun size={16} className="cursor-pointer" />
+              <Moon size={16} className="cursor-pointer" />
             </Label>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Tema claro</p>
+            <p>Tema escuro</p>
           </TooltipContent>
         </Tooltip>
         <Switch id="airplane-mode" onClick={() => setTheme(theme === "light" ? "dark" : "light")} />
         <Tooltip>
           <TooltipTrigger asChild>
             <Label htmlFor="airplane-mode">
-              <Moon size={16} className="cursor-pointer" />
+              <Sun size={16} className="cursor-pointer" />
             </Label>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Tema escuro</p>
+            <p>Tema claro</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

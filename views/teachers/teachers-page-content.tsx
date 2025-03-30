@@ -56,7 +56,7 @@ export function TeachersPageContent() {
           teacher.role !== "SUPER_ADMIN" &&
           (
             <Card
-              className="bg-transparent w-full flex items-center justify-between gap-3 cursor-pointer hover:bg-secondary/50 group p-4"
+              className="bg-transparent overflow-auto w-full flex items-center justify-between gap-3 cursor-pointer hover:bg-secondary/50 group p-4 "
               key={teacher.id}
             >
               <Avatar className="w-8 h-8 bg-esporte-neutral-lighter shadow-md flex justify-center items-center dark:bg-neutral-950">
@@ -64,13 +64,13 @@ export function TeachersPageContent() {
                 <AvatarFallback>{teacher.name}</AvatarFallback>
               </Avatar>
               <div className="flex flex-col gap-3 flex-1">
-                <div className='flex items-center gap-3'>
-                  <Label>{teacher.name}</Label>
-                  <Badge variant="secondary" className={`${teacher.role ? 'dark:bg-green-900/20 dark:text-green-300' : 'dark:bg-blue-900/20 dark:text-blue-300 bg-blue-100 text-blue-700'}`}>
+                <div className='flex flex-col md:flex-row items-start md:items-center gap-1 max-w-[150px] md:max-w-full truncate'>
+                  <Label className=''>{teacher.name}</Label>
+                  <Badge variant="secondary" className={`${teacher.role ? 'dark:bg-green-900/20 dark:text-green-300' : 'dark:bg-blue-900/20 dark:text-blue-300 bg-blue-100 text-blue-700'} text-[10px]`}>
                     {teacher.role}
                   </Badge>
                 </div>
-                <Label className='text-esporte-neutral-default'>{teacher.email}</Label>
+                <Label className='text-esporte-neutral-default max-w-[120px] truncate'>{teacher.email}</Label>
               </div>
               <div className="flex gap-3">
                 <Button

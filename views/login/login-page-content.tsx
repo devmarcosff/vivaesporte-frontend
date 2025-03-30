@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { LoaderCircle } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { loginService } from './login-service'
 import { RouteMap } from '@/routes/route-map'
@@ -114,6 +114,7 @@ export function LoginPageContent() {
           </CardContent>
         </Card>
       </div>
+
     </div >
   )
 }
