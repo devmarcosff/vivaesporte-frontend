@@ -71,7 +71,7 @@ export function SidebarWrapper({ isOpen, onClose }: SidebarProps) {
       <div className="px-3 py-2 flex-1">
         <div className="flex items-center justify-between pl-3 h-18 mb-2">
           <div className="py-3">
-            <h1 className="text-2xl font-bold text-esporte-soft-purple">Conecta Esporte</h1>
+            <h1 className="text-2xl font-bold text-esporte-soft-purple">Viva Esporte</h1>
             <Label>Bom Jesus do Itabapoana</Label>
           </div>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={onClose}>
