@@ -9,10 +9,9 @@ interface PageTitleProps {
   primaryButton?: { label: string; icon?: React.ReactNode; action: () => void };
   secondaryButton?: { label: string; icon?: React.ReactNode; action: () => void };
   backButtonUrl?: string;
-  flex?: boolean
 }
 
-export function PageTitle({ primaryButton, secondaryButton, title, description, backButtonUrl, flex }: PageTitleProps) {
+export function PageTitle({ primaryButton, secondaryButton, title, description, backButtonUrl }: PageTitleProps) {
   return (
     <div className={`md:flex items-center justify-center gap-1 mb-8`}>
       {backButtonUrl && (

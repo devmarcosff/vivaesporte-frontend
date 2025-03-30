@@ -29,7 +29,7 @@ async function RootLayout({ children }: LayoutProps) {
   return (
     <html lang='pt-br'>
       <body className={poppins.className}>
-        {/* <Analytics /> */}
+        <Analytics />
         <Suspense fallback={null}>
           <LoadingBar />
         </Suspense>

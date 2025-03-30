@@ -143,7 +143,7 @@ export function StudentsDetailPageContent() {
         onSave={handleProfileUpdate}
         loading={loading} />
 
-      <PageTitle flex
+      <PageTitle
         title="Detalhes do Aluno"
         description="Visualize detalhes de dados pessoais, acadêmicos, atividades esportivas e desempenho."
         backButtonUrl={RouteMap.students} />
