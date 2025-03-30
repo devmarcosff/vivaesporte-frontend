@@ -85,7 +85,7 @@ export function SidebarWrapper({ isOpen, onClose }: SidebarProps) {
               <SelectValue placeholder="Select account" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="personal">Acesso Admin</SelectItem>
+              <SelectItem value="personal">Acesso Profissional</SelectItem>
             </SelectContent>
           </Select>
         </div>

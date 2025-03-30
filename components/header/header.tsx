@@ -22,11 +22,11 @@ export function Header({ onMobileMenuClick }: HeaderProps) {
   const handleLogout = () => {
     // TODO: Implement actual logout
     nookies.destroy(null, "USER_TOKEN", { path: "/" });
-    router.push("/auth/login");
+    router.push(RouteMap.login);
   };
 
   return (
-    <div className="border-b sticky top-0 z-50 bg-background">
+    <div className="border-b sticky top-0 z-40 bg-background">
       <div className="flex h-16 items-center px-8">
         <Button variant="ghost" size="icon" className="md:hidden mr-4" onClick={onMobileMenuClick}>
           <Menu className="h-5 w-5" />
@@ -65,14 +65,13 @@ export function Header({ onMobileMenuClick }: HeaderProps) {
                   {t("settings")}
                 </Link>
                 <div className="border-t pt-3">
-                  <Link
-                    href={RouteMap.login}
+                  <button
                     className="flex items-center gap-3 text-sm text-destructive hover:text-destructive/90 transition-colors"
                     onClick={handleLogout}
                   >
                     <LogOut className="h-4 w-4" />
-                    {t("logout")}
-                  </Link>
+                    Sair
+                  </button>
                 </div>
               </div>
             </PopoverContent>

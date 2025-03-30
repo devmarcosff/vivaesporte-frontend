@@ -18,7 +18,7 @@ export function DashboardPageContent() {
 
 
   return (
-    <div className="flex-1 space-y-4 p-8">
+    <div className="flex-1 space-y-4">
       <PageTitle title={t('title')} />
 
       <div className="grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

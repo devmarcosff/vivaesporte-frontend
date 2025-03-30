@@ -150,9 +150,9 @@ export function StudentsDetailPageContent() {
 
       <div className="space-y-8 mx-auto">
         {/* Tutorial Link */}
-        <Card className="flex items-start justify-between overflow-hidden dark:bg-neutral-900 p-6">
-          <div className="flex items-center gap-6">
-            <Avatar className="w-24 h-24 bg-esporte-neutral-lighter shadow-md flex justify-center items-center dark:bg-neutral-950">
+        <Card className="flex flex-col items-start justify-between overflow-hidden dark:bg-neutral-900 p-6">
+          <div className="flex flex-col items-center gap-6">
+            <Avatar className="w-24 h-24 hidden bg-esporte-neutral-lighter shadow-md md:flex justify-center items-center dark:bg-neutral-950">
               {/* <AvatarImage src="https://github.com/shadcn.png" className="w-20 h-20 rounded-full" alt="@shadcn" /> */}
               <AvatarFallback>{getInitials(`${student?.name}`)}</AvatarFallback>
             </Avatar>
@@ -167,11 +167,11 @@ export function StudentsDetailPageContent() {
                 <span>Escola: {student?.school}</span>
               </div>
               <div className="flex flex-wrap gap-2 mt-1">
-                {student?.sports && student?.sports.map((sport) => (
+                {/* {student?.sports && student?.sports.map((sport) => (
                   <Badge key={sport.id} variant="secondary" className={`${sport.name === 'Futebol' ? 'dark:bg-green-900/20 dark:text-green-300' : sport.name === 'Jiu-Jitsu' ? 'dark:bg-orange-900/20 dark:text-orange-300' : 'dark:bg-blue-900/20 dark:text-blue-300 bg-blue-100 text-blue-700'}`}>
                     {sport.name}
                   </Badge>
-                ))}
+                ))} */}
                 {(!student?.sports || student?.sports.length === 0) && (
                   esportes.map((esporte) => (
                     <Badge
@@ -186,39 +186,41 @@ export function StudentsDetailPageContent() {
               </div>
             </div>
           </div>
-          <div className="flex gap-3 self-end md:self-auto">
+          <div className="flex gap-3 self-end md:self-auto relative mt-3">
             <Button variant="outline" className="flex items-center gap-2">
               <MessageSquareText className="h-4 w-4" />
               Agendar aula
             </Button>
-            <Button className="flex items-center gap-2" onClick={() => setOpenEditModal(!openEditModal)}>
+            <Button variant='secondary' className="flex items-center gap-2" onClick={() => setOpenEditModal(!openEditModal)}>
               <Edit className="h-4 w-4" />
               Editar
             </Button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <MoreHorizontal className="h-5 w-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>Área do aluno</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className='cursor-pointer'>
-                  <FileBarChart className="h-4 w-4 mr-2" />
-                  Gerar relatório
-                </DropdownMenuItem>
-                <DropdownMenuItem className='cursor-pointer'>
-                  <Settings className="h-4 w-4 mr-2" />
-                  Configurações
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="text-red-600 cursor-pointer" onClick={() => handleDeleteStudent(`${student?.id}`)}>
-                  <Trash className="h-4 w-4 mr-2" />
-                  Excluir aluno
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className='absolute md:relative right-0 md:right-0 -top-[125px] md:top-0'>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <MoreHorizontal className="h-5 w-5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuLabel>Área do aluno</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem className='cursor-pointer'>
+                    <FileBarChart className="h-4 w-4 mr-2" />
+                    Gerar relatório
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className='cursor-pointer'>
+                    <Settings className="h-4 w-4 mr-2" />
+                    Configurações
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem className="text-red-600 cursor-pointer" onClick={() => handleDeleteStudent(`${student?.id}`)}>
+                    <Trash className="h-4 w-4 mr-2" />
+                    Excluir aluno
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
         </Card>
       </div>
@@ -305,17 +307,20 @@ export function StudentsDetailPageContent() {
               <Card className="p-6 mt-6 dark:bg-neutral-900">
                 <h2 className="text-lg font-semibold mb-4">Documentos</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <Label className='block md:hidden text-xs'>Histórico Eescolar não identificado</Label>
                   <Button variant="outline" className="h-auto py-6 flex flex-col items-center justify-center gap-2 hover:bg-blue-50 dark:hover:bg-blue-900/20">
                     <FileText className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-                    <Label>Histórico Eescolar não identificado</Label>
+                    <Label className='hidden md:block'>Histórico Eescolar não identificado</Label>
                   </Button>
+                  <Label className='block md:hidden text-xs'>Matrícula não identificada</Label>
                   <Button variant="outline" className="h-auto py-6 flex flex-col items-center justify-center gap-2 hover:bg-blue-50 dark:hover:bg-blue-900/20">
                     <FileText className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-                    <span>Matrícula não identificada</span>
+                    <Label className='hidden md:block'>Matrícula não identificada</Label>
                   </Button>
+                  <Label className='block md:hidden text-xs'>Ficha Médica não identificada</Label>
                   <Button variant="outline" className="h-auto py-6 flex flex-col items-center justify-center gap-2 hover:bg-blue-50 dark:hover:bg-blue-900/20">
                     <FileText className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-                    <span>Ficha Médica não identificada</span>
+                    <Label className='hidden md:block'>Ficha Médica não identificada</Label>
                   </Button>
                 </div>
               </Card>

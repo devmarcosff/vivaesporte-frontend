@@ -14,10 +14,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <div className="h-screen">
       <div className="h-full relative">
-        <div className="hidden h-full md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 bg-gray-900">
+        <div className="hidden h-full z-0 md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 bg-gray-900">
           <SidebarWrapper isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden z-50 relative">
           <SidebarWrapper isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         </div>
         <main className="md:pl-72">
